@@ -27,7 +27,8 @@
     "command-line-args": "^3.0.0",
     "command-line-usage": "^3.0.1",
     "pg": "^6.0.0",
-    "pg-format": "^1.0.2"
+    "pg-format": "^1.0.2",
+    "underscore-node": "^0.1.2"
   },
   "bin": {
     "pji": "./bin/pji"
