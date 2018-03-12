@@ -12,9 +12,10 @@
             "args": [
                 "--file", "all.json",
                 "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
-                "-t" ,"copyusers",
-                "-k","userKey",
-                "-F","userKey,phone,email,name,avatar"
+                "-t" ,"teststudios",
+                "-k","studioKey",
+                "-n","studios",
+                "-F","studioKey,settings.logo,settings.color,settings.name,settings.location,settings.shortCode,settings.unprocessed_invites,settings.background_image"
                 ]
         }
     ]
