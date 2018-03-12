@@ -12,10 +12,12 @@
             "args": [
                 "--file", "all.json",
                 "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
-                "-t" ,"teststudios",
+                "-t" ,"testsUsers",
                 "-k","studioKey",
                 "-n","studios",
-                "-F","studioKey,settings.logo,settings.color,settings.name,settings.location,settings.shortCode,settings.unprocessed_invites,settings.background_image"
+                "-F","role,streamToken,streamName,timestamp,invitedBy:invited_by,approvedBy:approved_by,classCount,unreadMessageCount:unread_message_count,unreadFeedCount:unread_feed_count,userKey,studioKey",   
+                "-s","userKey",
+                "-r","users"
                 ]
         }
     ]
