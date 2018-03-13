@@ -9,16 +9,35 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\lib\\pji.js",
+            // "args": [
+            //     "--file", "all.json",
+            //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+            //     "-t" ,"teststudios",
+            //     "-k","studioKey",
+            //     "-n","studios",
+            //     "-F","studioKey,logo,color,name,location,shortCode,unprocessed_invites,background_image"
+            //     ]
+            // users
             "args": [
                 "--file", "all.json",
                 "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
-                "-t" ,"testsUsers",
-                "-k","studioKey",
-                "-n","studios",
-                "-F","role,streamToken,streamName,timestamp,invitedBy:invited_by,approvedBy:approved_by,classCount,unreadMessageCount:unread_message_count,unreadFeedCount:unread_feed_count,userKey,studioKey",   
-                "-s","userKey",
-                "-r","users"
+                "-t" ,"testusers",
+                "-k","userKey",
+                "-n","users",
+                "-F","userKey,phone,email,name,avatar"
                 ]
+            // studioUser
+            // "args": [
+            //     "--file", "all.json",
+            //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+            //     "-t" ,"tstudioUsers",
+            //     "-k","studioKey",
+            //     "-n","studios",
+            //     "-F","role,streamToken,streamName,timestamp,invited_by,approved_by,classCount,unread_message_count,unread_feed_count,userKey,studioKey",   
+            //     "-d","role,streamToken,streamName,timestamp,invitedBy,approvedBy,classCount,unreadMessageCount,unreadFeedCount,userKey,studioKey",   
+            //     "-s","userKey",
+            //     "-r","users"
+            //     ]
         }
     ]
 }
