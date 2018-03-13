@@ -4,9 +4,13 @@ pg-json-import lets you take data from a JSON file, and insert it into a table o
 
 ## Installation
 
-Install the tool with [npm](https://npmjs.com)
+Download zip folder and extract it .
 
-`npm install -g pg-import-json`
+Add JSON file in folder
+
+open cmds.txt and Rename JSON file in each command (exisiting one is all.json) and change postgres connectionstring .
+
+Run  commands at cmds.txt in sequence.
 
 ## Usage
 
