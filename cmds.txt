@@ -1,0 +1,4 @@
+node lib/pji --file all.json -c postgresql://postgres:123456@localhost:5432/iRehearse -t users -k userKey -n users -F userKey,phone,email,name,avatar			
+node lib/pji --file all.json -c postgresql://postgres:123456@localhost:5432/iRehearse -t studios -k studioKey -n studios -F studioKey,logo,color,name,location,shortCode,unprocessed_invites,background_image
+node lib/pji --file all.json -c postgresql://postgres:123456@localhost:5432/iRehearse -t studioUsers -k studioKey -n studios -F role,streamToken,streamName,timestamp,invited_by,approved_by,classCount,unread_message_count,unread_feed_count,userKey,studioKey -d role,streamToken,streamName,timestamp,invitedBy,approvedBy,classCount,unreadMessageCount,unreadFeedCount,userKey,studioKey -s userKey -r users
+
