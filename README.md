@@ -4,7 +4,7 @@ pg-json-import lets you take data from a JSON file, and insert it into a table o
 
 ## Installation an Usage
 
-Download zip folder and extract it .
+Download zip folder , extract it and  run npm i.
 
 Add JSON file in folder
 
