@@ -8,8 +8,9 @@ Download zip folder , extract it and  run npm i.
 
 Add JSON file in folder
 
+
 open cmds.txt and Rename JSON file in each command (exisiting one is all.json) and change postgres connectionstring .
 
 Run  commands at cmds.txt in sequence.
 
-
+Note : be sure table is empty before migrating data
