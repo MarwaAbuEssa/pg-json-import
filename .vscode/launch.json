@@ -18,6 +18,14 @@
             //     "-n","studios",
             //     "-F","studioKey,logo,color,name,location,shortCode,unprocessed_invites,background_image,generalMessaging",
             //     "-d","studioKey,logo,color,name,location,shortCode,unprocessed_invites,background_image,general_messaging"
+            //     ]
+            //  "args": [
+            //     "--file", "studios.json",
+            //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+            //     "-t" ,"studios",
+            //     "-k","studioKey",
+            //     "-n","studios",
+            //     "-F","studioKey,logo,color,name,location,shortCode,unprocessed_invites,background_image"
 
             //     ]
             // users
@@ -30,17 +38,84 @@
             //     "-F","userKey,phone,email,name,avatar"
             //     ]
             // studioUser
-            "args": [
-                "--file", "studios.json",
-                "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
-                "-t" ,"studioUsers",
-                "-k","studioKey",
-                "-n","studios",
-                "-F","role,streamToken,streamName,timestamp,invited_by,approved_by,classCount,unread_message_count,unread_feed_count,userKey,studioKey",   
-                "-d","role,streamToken,streamName,timestamp,invitedBy,approvedBy,classCount,unreadMessageCount,unreadFeedCount,userKey,studioKey",   
-                "-s","userKey",
-                "-r","users"
-                ]
+            // "args": [
+            //     "--file", "studios.json",
+            //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+            //     "-t" ,"studioUsers",
+            //     "-k","studioKey",
+            //     "-n","studios",
+            //     "-F","role,streamToken,streamName,timestamp,invited_by,approved_by,classCount,unread_message_count,unread_feed_count,userKey,studioKey",   
+            //     "-d","role,streamToken,streamName,timestamp,invitedBy,approvedBy,classCount,unreadMessageCount,unreadFeedCount,userKey,studioKey",   
+            //     "-s","userKey",
+            //     "-r","users"
+            //     ],
+            // "args": [
+            //     "--file", "photos.json",
+            //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+            //     "-t" ,"photos",
+            //     "-k","photoKey",
+            //     "-n","photos",
+            //     "-F","photoKey,title,status,media,timestamp,studio,user,createdAt",
+            //     "-d","photoKey,title,status,media,timestamp,studioKey,userKey,createdAt"
+            //     ]
+
+                // "args": [
+                //     "--file", "videos.json",
+                //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+                //     "-t" ,"videos",
+                //     "-k","videoKey",
+                //     "-n","videos",
+                //     "-F","videoKey,title,status,media,timestamp,assembly_id,old_media,class,studio,user,createdAt",
+                //     "-d","videoKey,title,status,media,timestamp,assemblyId,oldMedia,classKey,studioKey,userKey,createdAt"
+                //     ]
+
+                    // "args": [
+                    //     "--file", "audio.json",
+                    //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+                    //     "-t" ,"audios",
+                    //     "-k","audioKey",
+                    //     "-n","audios",
+                    //     "-F","audioKey,title,artist,media,timestamp,format,studio,user,createdAt",
+                    //     "-d","audioKey,title,artist,media,timestamp,format,studioKey,userKey,createdAt"
+                    //     ]
+
+                    // "args": [
+                    //     "--file", "posts.json",
+                    //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+                    //     "-t" ,"posts",
+                    //     "-k","postKey",
+                    //     "-n","posts",
+                    //     "-F","postKey,title,status,media,applauseCount,commentCount,ref,type,studio,user,created_at,updated_at",
+                    //     "-d","postKey,title,status,media,applauseCount,commentCount,ref,type,studioKey,userKey,createdAt,updatedAt"
+                    //     ]
+
+                        // "args": [
+                        //     "--file", "posts.json",
+                        //     "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+                        //     "-t" ,"postcomments",
+                        //     "-k","postKey",
+                        //     "-n","posts",
+                        //     "-F","postKey,timestamp,comment,user,createdAt",
+                        //     "-d","postKey,timestamp,comment,userKey,createdAt",
+                        //     "-s","postKey",
+                        //     "-r","comments"
+                        //     ]
+
+                        "args": [
+                            "--file", "posts.json",
+                            "-c", "postgresql://postgres:123456@localhost:5432/iRehearse",
+                            "-t" ,"postapplauses",
+                            "-k","postKey",
+                            "-n","posts",
+                            "-F","postKey,timestamp,user,createdAt",
+                            "-d","postKey,timestamp,userKey,createdAt",
+                            "-s","postKey",
+                            "-r","applauses"
+                            ]
+
+                       
+          
+
         }
     ]
 }
